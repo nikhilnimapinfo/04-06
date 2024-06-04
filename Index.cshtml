@@ -1,0 +1,36 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @ViewBag.name
+    </div>
+    <hr />
+    <div>
+        @foreach(var names in ViewBag.MyList)
+        { 
+         <p>@names</p> 
+        }
+
+    </div>
+    <hr />
+    <div>
+        @foreach (var data in ViewBag.NewData)
+        {
+            <h3>@data.Id</h3>
+            <h3>@data.Name</h3>
+            <h3>@data.Addr</h3>
+
+        }
+
+    </div>
+
+</body>
+</html>
